@@ -23,7 +23,7 @@ export default async function Home() {
   return (
     <main className="min-h-screen w-full">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 p-3">
-        <Tile className="col-span-2">
+        <Tile className="col-span-1 md:col-span-2">
           <MorphingNavbar title="League of Legends at UT Austin" />
         </Tile>
         {IMAGES.general.map((src, i) => (
