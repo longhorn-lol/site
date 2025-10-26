@@ -34,9 +34,10 @@ export default async function Home() {
 
         <Tile className="aspect-video">
           <TextWidget href={CONFIG.socialLinks[1].href} src={IMAGES.events[0]} alt={"Photo 1"}>
-            Events
+            Join our community
           </TextWidget>
         </Tile>
+
         {IMAGES.events.slice(1).map((src, i) => (
           <Tile key={src} className="aspect-video">
             <Image src={src} alt={`Photo ${i + 2}`} fill className="object-cover" />
@@ -45,9 +46,10 @@ export default async function Home() {
 
         <Tile className="aspect-video">
           <TextWidget href={CONFIG.socialLinks[0].href} src={IMAGES.content[0]} alt={"Photo 1"}>
-            Content
+            Follow us
           </TextWidget>
         </Tile>
+
         {IMAGES.content.slice(1).map((src, i) => (
           <Tile key={src} className="aspect-video">
             <Image src={src} alt={`Photo ${i + 2}`} fill className="object-cover" />
@@ -56,9 +58,10 @@ export default async function Home() {
 
         <Tile className="aspect-video">
           <TextWidget href={CONFIG.socialLinks[2].href} src={IMAGES.competitive[0]} alt={"Photo 1"}>
-            Competitive
+            Watch UT Esports
           </TextWidget>
         </Tile>
+
         {IMAGES.competitive.slice(1).map((src, i) => (
           <Tile key={src} className="aspect-video">
             <Image src={src} alt={`Photo ${i + 2}`} fill className="object-cover" />
