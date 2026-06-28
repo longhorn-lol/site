@@ -20,16 +20,16 @@ export function InitialWidget({ title }: { title: string }) {
           target="_blank"
           className="text-lg md:text-2xl flex items-center gap-1 text-blue-500 font-medium mb-1"
         >
-          <span className="underline">Community</span> <FaArrowRight className="w-5 h-5" />
+          <span className="underline">Join the Discord</span> <FaArrowRight className="w-5 h-5" />
         </motion.a>
-        <motion.a
+        {/* <motion.a
           transition={CONFIG.spring}
           href={CONFIG.developerHref}
           target="_blank"
           className="text-lg md:text-2xl flex items-center gap-1 text-blue-500 font-medium mb-1"
         >
           <span className="underline">Developers</span> <FaArrowRight className="w-5 h-5" />
-        </motion.a>
+        </motion.a> */}
       </motion.div>
       <motion.h1 transition={CONFIG.spring} className="text-6xl md:text-7xl font-semibold">
         {title}
@@ -99,7 +99,7 @@ export default function MorphingNavbar({ title }: { title: string }) {
               ))}
             </ul>
 
-            <div className="hidden md:flex items-center gap-2">
+            {/* <div className="hidden md:flex items-center gap-2">
               <Link
                 href={CONFIG.developerHref}
                 className="flex gap-2 items-center rounded-xl border border-white/10 bg:white/5 bg-white/5 px-4 py-2 text-sm font-medium text-white/90
@@ -107,7 +107,7 @@ export default function MorphingNavbar({ title }: { title: string }) {
               >
                 <span>Developers</span> <FaBolt className="text-orange-500" />
               </Link>
-            </div>
+            </div> */}
           </div>
         </motion.nav>
       </AnimatePresence>
